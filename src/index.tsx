@@ -7,8 +7,8 @@ import Routes from './routes';
 
 export default function App() {
   return (
-    <SafeAreaView>
-      <StatusBar />
+    <SafeAreaView style={{flex: 1}}>
+      <StatusBar translucent={true} backgroundColor="transparent" />
       <Routes />
     </SafeAreaView>
   );
