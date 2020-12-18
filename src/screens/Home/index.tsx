@@ -14,15 +14,20 @@ import {
   Text,
   BoxDados,
   TextDados,
-  BoxImageDados,
-  ImageDados,
   ButtonCad,
   Footer,
   FooterText,
   Paragrafo,
   styles,
+  BoxSF,
+  SubBoxDados,
+  BoxSFGray,
+  TextBold,
+  BoxOF,
+  BoxOFGray,
 } from './styles';
 
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import ImageBack from '../../assets/Background.png';
 import LogoWorkalu from '../../assets/WorkaluLogo512.png';
 
@@ -34,6 +39,9 @@ export default function Home() {
       <Background>
         <BackgroundImage source={ImageBack} />
       </Background>
+      <ButtonCad style={styles.elevationButton}>
+        <Icon name="add" size={25} color="#fff" />
+      </ButtonCad>
       <BoxWhite>
         <BoxLogo style={styles.elevationLogo}>
           <Logo source={LogoWorkalu} />
@@ -52,11 +60,22 @@ export default function Home() {
           <Text>Pesquisar por ofertas de empregos</Text>
         </ButtonWork>
         <BoxDados>
-          <TextDados>0</TextDados>
-          <TextDados>0</TextDados>
-          <ButtonCad>
-            <Text>+</Text>
-          </ButtonCad>
+          <SubBoxDados>
+            <BoxSF style={styles.elevationButton}>
+              <TextBold>SF</TextBold>
+            </BoxSF>
+            <BoxSFGray style={styles.elevationButton}>
+              <TextDados>0</TextDados>
+            </BoxSFGray>
+          </SubBoxDados>
+          <SubBoxDados>
+            <BoxOF style={styles.elevationButton}>
+              <TextBold>OF</TextBold>
+            </BoxOF>
+            <BoxOFGray style={styles.elevationButton}>
+              <TextDados>0</TextDados>
+            </BoxOFGray>
+          </SubBoxDados>
         </BoxDados>
         <Footer>
           <FooterText>2020 | Workalu | </FooterText>

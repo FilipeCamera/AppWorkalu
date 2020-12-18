@@ -43,8 +43,9 @@ export const Logo = styled.Image`
 export const BoxApresentacao = styled.View`
   width: 50%;
   height: 50px;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background: rgba(10, 43, 51, 0.75);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -55,6 +56,8 @@ export const BoxApresentacao = styled.View`
 export const TextApresentacao = styled.Text`
   font-size: 16px;
   font-family: 'Poppins-SemiBold';
+  text-align: center;
+  width: 100%;
   color: #fff;
 `;
 
@@ -92,6 +95,12 @@ export const Text = styled.Text`
   color: #fff;
 `;
 
+export const TextBold = styled.Text`
+  font-family: 'Poppins-Bold';
+  font-size: 16px;
+  color: #fff;
+`;
+
 export const BoxDados = styled.View`
   flex-direction: row;
   width: 100%;
@@ -106,29 +115,68 @@ export const TextDados = styled.Text`
   color: #2b2b2b;
 `;
 
-export const BoxImageDados = styled.View`
-  width: 30px;
-  height: 30px;
-`;
-
-export const ImageDados = styled.Image`
-  width: 100%;
-  height: 100%;
-`;
-
 export const ButtonCad = styled.TouchableOpacity`
   width: 40px;
   height: 40px;
-  border-radius: 20px;
-  background: #e45454;
   align-items: center;
   justify-content: center;
+  background: rgba(10, 43, 51, 0.9);
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  top: 30px;
+  right: 0px;
+`;
+
+export const SubBoxDados = styled.View`
+  flex-direction: row;
+`;
+
+export const BoxSF = styled.View`
+  background: #1f8299;
+  width: 50px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+`;
+
+export const BoxSFGray = styled.View`
+  background: #e1e1e1;
+  width: 70px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+`;
+
+export const BoxOF = styled.View`
+  background: #e45454;
+  width: 50px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+`;
+
+export const BoxOFGray = styled.View`
+  background: #e1e1e1;
+  width: 70px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 `;
 
 export const Footer = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 20px 0 10px;
 `;
 
 export const FooterText = styled.Text`
