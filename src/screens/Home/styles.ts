@@ -128,6 +128,19 @@ export const ButtonCad = styled.TouchableOpacity`
   right: 0px;
 `;
 
+export const ButtonRemove = styled.TouchableOpacity`
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(178, 36, 36, 0.9);
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  top: 80px;
+  right: 0px;
+`;
+
 export const SubBoxDados = styled.View`
   flex-direction: row;
 `;
@@ -153,7 +166,7 @@ export const BoxSFGray = styled.View`
 `;
 
 export const BoxOF = styled.View`
-  background: #e45454;
+  background: #e44545;
   width: 50px;
   height: 40px;
   justify-content: center;
@@ -182,6 +195,7 @@ export const Footer = styled.View`
 export const FooterText = styled.Text`
   font-family: 'Poppins-Light';
   font-size: 13px;
+  color: #2b2b2b;
 `;
 
 export const styles = StyleSheet.create({

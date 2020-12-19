@@ -15,6 +15,7 @@ import {
   BoxDados,
   TextDados,
   ButtonCad,
+  ButtonRemove,
   Footer,
   FooterText,
   Paragrafo,
@@ -31,7 +32,10 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import ImageBack from '../../assets/Background.png';
 import LogoWorkalu from '../../assets/WorkaluLogo512.png';
 
+import {useNavigation} from '@react-navigation/native';
+
 export default function Home() {
+  const navigation = useNavigation();
   return (
     <Container
       showsVerticalScrollIndicator={false}
@@ -39,9 +43,14 @@ export default function Home() {
       <Background>
         <BackgroundImage source={ImageBack} />
       </Background>
-      <ButtonCad style={styles.elevationButton}>
+      <ButtonCad
+        style={styles.elevationButton}
+        onPress={() => navigation.navigate('Register')}>
         <Icon name="add" size={25} color="#fff" />
       </ButtonCad>
+      <ButtonRemove>
+        <Icon name="close" size={22} color="#FFF" />
+      </ButtonRemove>
       <BoxWhite>
         <BoxLogo style={styles.elevationLogo}>
           <Logo source={LogoWorkalu} />
@@ -78,7 +87,7 @@ export default function Home() {
           </SubBoxDados>
         </BoxDados>
         <Footer>
-          <FooterText>2020 | Workalu | </FooterText>
+          <FooterText>2020 - Workalu</FooterText>
         </Footer>
       </BoxWhite>
     </Container>
