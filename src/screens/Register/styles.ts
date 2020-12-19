@@ -59,6 +59,7 @@ export const InputValor = styled.TextInput`
 
 export const BoxLocation = styled.View`
   flex-direction: row;
+  justify-content: space-between;
   width: 100%;
 `;
 

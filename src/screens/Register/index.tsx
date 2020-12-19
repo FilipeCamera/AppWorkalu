@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {
   Container,
@@ -24,8 +24,12 @@ import {StatusBar} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {useNavigation} from '@react-navigation/native';
+import PickerCategory from '../../components/PickerCategory';
+import PickerUf from '../../components/PickerUf';
 
 export default function Register() {
+  const [value, setValue] = useState('');
+  const [valueUF, setValueUF] = useState('');
   const navigation = useNavigation();
   return (
     <Container
@@ -39,6 +43,10 @@ export default function Register() {
         <Icon name="arrow-back" size={28} color="#2b2b2b" />
       </ButtonBack>
       <Title>Cadastrar Serviço</Title>
+      <BoxCampo>
+        <Label>Categoria:</Label>
+        <PickerCategory valor={value} setValor={setValue} />
+      </BoxCampo>
       <BoxCampo>
         <Label>Nome:</Label>
         <Input placeholder="Ex: João" />
@@ -66,6 +74,7 @@ export default function Register() {
         <Label>Localização:</Label>
         <BoxLocation>
           <InputLocation placeholder="Ex: Salvador" />
+          <PickerUf valor={valueUF} setValor={setValueUF} />
         </BoxLocation>
       </BoxCampo>
       <Button>
