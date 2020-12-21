@@ -69,7 +69,9 @@ export default function Home() {
           onPress={() => navigation.navigate('Servicos')}>
           <Text>Pesquisar por serviços e freelancers</Text>
         </ButtonService>
-        <ButtonWork style={styles.elevationButton}>
+        <ButtonWork
+          style={styles.elevationButton}
+          onPress={() => navigation.navigate('Empregos')}>
           <Text>Pesquisar por ofertas de empregos</Text>
         </ButtonWork>
         <BoxDados>

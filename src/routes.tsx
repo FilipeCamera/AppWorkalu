@@ -7,6 +7,7 @@ import Home from './screens/Home';
 import Register from './screens/Register';
 import Remove from './screens/RemoveData';
 import Servicos from './screens/Servicos';
+import Empregos from './screens/Empregos';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,11 @@ export default function Routes() {
         <Stack.Screen
           name="Servicos"
           component={Servicos}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Empregos"
+          component={Empregos}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

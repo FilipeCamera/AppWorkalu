@@ -11,8 +11,8 @@ export const BoxTitleButton = styled.View`
   padding: 10px;
   align-items: center;
   justify-content: space-between;
+  background: #e44545;
   margin-top: ${getStatusBarHeight()};
-  background: #1f8299;
 `;
 
 export const Title = styled.Text`
