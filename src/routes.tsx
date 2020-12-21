@@ -6,6 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from './screens/Home';
 import Register from './screens/Register';
 import Remove from './screens/RemoveData';
+import Servicos from './screens/Servicos';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,11 @@ export default function Routes() {
         <Stack.Screen
           name="Remove"
           component={Remove}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Servicos"
+          component={Servicos}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

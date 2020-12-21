@@ -64,7 +64,9 @@ export default function Home() {
           aqui você encontra profissionais qualificados, oportunidades de
           empregos e serviços.
         </Paragrafo>
-        <ButtonService style={styles.elevationButton}>
+        <ButtonService
+          style={styles.elevationButton}
+          onPress={() => navigation.navigate('Servicos')}>
           <Text>Pesquisar por serviços e freelancers</Text>
         </ButtonService>
         <ButtonWork style={styles.elevationButton}>
