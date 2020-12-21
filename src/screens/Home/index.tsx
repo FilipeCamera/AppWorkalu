@@ -48,7 +48,9 @@ export default function Home() {
         onPress={() => navigation.navigate('Register')}>
         <Icon name="add" size={25} color="#fff" />
       </ButtonCad>
-      <ButtonRemove>
+      <ButtonRemove
+        style={styles.elevationButton}
+        onPress={() => navigation.navigate('Remove')}>
         <Icon name="close" size={22} color="#FFF" />
       </ButtonRemove>
       <BoxWhite>

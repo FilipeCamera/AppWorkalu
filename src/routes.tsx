@@ -5,6 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Home from './screens/Home';
 import Register from './screens/Register';
+import Remove from './screens/RemoveData';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,11 @@ export default function Routes() {
         <Stack.Screen
           name="Register"
           component={Register}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Remove"
+          component={Remove}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

@@ -7,7 +7,10 @@ export default function PickerUf({valor, setValor}) {
     <Picker
       selectedValue={valor}
       mode="dialog"
-      style={{width: 50}}
+      style={{
+        width: 100,
+        color: '#a1a1a1',
+      }}
       onValueChange={(itemValue, itemIndex) => setValor(itemValue)}>
       <Picker.Item label="--" value="" />
       <Picker.Item label="AC" value="AC" />

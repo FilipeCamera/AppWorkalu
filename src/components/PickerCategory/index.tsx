@@ -7,6 +7,7 @@ export default function PickerCategory({valor, setValor}) {
     <Picker
       selectedValue={valor}
       mode="dialog"
+      style={{color: '#a1a1a1'}}
       onValueChange={(itemValue, itemIndex) => setValor(itemValue)}>
       <Picker.Item label="Selecione..." value="" />
       <Picker.Item label="Automotivo" value="Automotivo" />
