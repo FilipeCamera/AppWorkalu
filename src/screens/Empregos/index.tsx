@@ -8,11 +8,17 @@ import {StatusBar} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import ButtonSearch from '../../components/ButtonSearch';
 import ButtonFilter from '../../components/ButtonFilter/intex';
+import CardEmprego from '../../components/CardEmprego';
 
 export default function Empregos() {
   const navigation = useNavigation();
   return (
-    <Container contentContainerStyle={{flexGrow: 1, alignItems: 'center'}}>
+    <Container
+      contentContainerStyle={{
+        flexGrow: 1,
+        alignItems: 'center',
+        backgroundColor: '#fff',
+      }}>
       <StatusBar barStyle="light-content" backgroundColor="#B23636" />
       <BoxTitleButton>
         <ButtonBack onPress={() => navigation.goBack()}>
@@ -22,6 +28,7 @@ export default function Empregos() {
       </BoxTitleButton>
       <ButtonSearch />
       <ButtonFilter />
+      <CardEmprego />
     </Container>
   );
 }

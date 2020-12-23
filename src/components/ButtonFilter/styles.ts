@@ -1,5 +1,7 @@
 import styled from 'styled-components/native';
 
+import {StyleSheet} from 'react-native';
+
 export const Container = styled.TouchableOpacity`
   position: absolute;
   top: 145px;
@@ -12,3 +14,9 @@ export const Container = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
 `;
+
+export const styles = StyleSheet.create({
+  buttonElevation: {
+    elevation: 6,
+  },
+});

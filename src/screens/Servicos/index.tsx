@@ -8,11 +8,17 @@ import {StatusBar} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import ButtonFilter from '../../components/ButtonFilter/intex';
 import ButtonSearch from '../../components/ButtonSearch';
+import CardServico from '../../components/CardServico';
 
 export default function Servicos() {
   const navigation = useNavigation();
   return (
-    <Container contentContainerStyle={{flexGrow: 1, alignItems: 'center'}}>
+    <Container
+      contentContainerStyle={{
+        flexGrow: 1,
+        alignItems: 'center',
+        backgroundColor: '#fff',
+      }}>
       <StatusBar barStyle="light-content" backgroundColor="#155766" />
       <BoxTitleButton>
         <ButtonBack onPress={() => navigation.goBack()}>
@@ -22,6 +28,7 @@ export default function Servicos() {
       </BoxTitleButton>
       <ButtonSearch />
       <ButtonFilter />
+      <CardServico />
     </Container>
   );
 }
