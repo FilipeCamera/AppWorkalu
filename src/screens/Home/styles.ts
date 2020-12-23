@@ -95,12 +95,6 @@ export const Text = styled.Text`
   color: #fff;
 `;
 
-export const TextBold = styled.Text`
-  font-family: 'Poppins-Bold';
-  font-size: 16px;
-  color: #fff;
-`;
-
 export const BoxDados = styled.View`
   flex-direction: row;
   width: 100%;

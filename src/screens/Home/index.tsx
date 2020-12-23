@@ -23,7 +23,6 @@ import {
   BoxSF,
   SubBoxDados,
   BoxSFGray,
-  TextBold,
   BoxOF,
   BoxOFGray,
 } from './styles';
@@ -77,7 +76,7 @@ export default function Home() {
         <BoxDados>
           <SubBoxDados>
             <BoxSF style={styles.elevationButton}>
-              <TextBold>SF</TextBold>
+              <Icon name="miscellaneous-services" size={25} color="#fff" />
             </BoxSF>
             <BoxSFGray style={styles.elevationButton}>
               <TextDados>0</TextDados>
@@ -85,7 +84,7 @@ export default function Home() {
           </SubBoxDados>
           <SubBoxDados>
             <BoxOF style={styles.elevationButton}>
-              <TextBold>OF</TextBold>
+              <Icon name="work" size={22} color="#fff" />
             </BoxOF>
             <BoxOFGray style={styles.elevationButton}>
               <TextDados>0</TextDados>

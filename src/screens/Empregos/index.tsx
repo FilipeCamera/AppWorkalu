@@ -6,6 +6,8 @@ import {useNavigation} from '@react-navigation/native';
 
 import {StatusBar} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import ButtonSearch from '../../components/ButtonSearch';
+import ButtonFilter from '../../components/ButtonFilter/intex';
 
 export default function Empregos() {
   const navigation = useNavigation();
@@ -18,6 +20,8 @@ export default function Empregos() {
         </ButtonBack>
         <Title>Ofertas de empregos</Title>
       </BoxTitleButton>
+      <ButtonSearch />
+      <ButtonFilter />
     </Container>
   );
 }
