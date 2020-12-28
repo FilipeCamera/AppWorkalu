@@ -8,6 +8,13 @@ import {
   ButtonInstagram,
   ButtonWhatsapp,
   WhatsImage,
+  Title,
+  BoxDados,
+  Label,
+  LabelDesc,
+  BoxPalavrasChaves,
+  TitlePalavrasChaves,
+  DescPalavrasChaves,
   styles,
 } from './styles';
 
@@ -28,6 +35,25 @@ export default function CardServico() {
           <WhatsImage source={ImageWhats} />
         </ButtonWhatsapp>
       </BoxButton>
+      <Title>Desenvolvimento de Aplicativos</Title>
+      <BoxDados>
+        <Label>Nome:</Label>
+        <LabelDesc>Filipe Camera</LabelDesc>
+      </BoxDados>
+      <BoxDados>
+        <Label>Valor do serviço:</Label>
+        <LabelDesc>R$150 - R$500</LabelDesc>
+      </BoxDados>
+      <BoxDados>
+        <Label>Localização:</Label>
+        <LabelDesc>Feira de Santana, BA</LabelDesc>
+      </BoxDados>
+      <BoxPalavrasChaves>
+        <TitlePalavrasChaves>Palavras-chaves:</TitlePalavrasChaves>
+        <DescPalavrasChaves>
+          Android, Typescript, Node.js, GraphQL, React, AWS
+        </DescPalavrasChaves>
+      </BoxPalavrasChaves>
     </Container>
   );
 }

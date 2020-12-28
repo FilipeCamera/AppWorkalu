@@ -15,6 +15,8 @@ import {
   Button,
   ButtonText,
   ButtonBack,
+  ButtonTags,
+  TextTags,
 } from './styles';
 
 import LogoWorkalu from '../../assets/WorkaluLogo512.png';
@@ -24,6 +26,9 @@ import {StatusBar} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {useNavigation} from '@react-navigation/native';
+
+import Tags from 'react-native-tags';
+
 import PickerCategory from '../../components/PickerCategory';
 import PickerUf from '../../components/PickerUf';
 
@@ -62,6 +67,39 @@ export default function Register() {
       <BoxCampo>
         <Label>Instagram:</Label>
         <Input placeholder="Ex: workalu" />
+      </BoxCampo>
+      <BoxCampo>
+        <Label>Palavras-chaves:</Label>
+        <Tags
+          initialText=""
+          textInputProps={{
+            placeholder: 'Escreva as palavras-chaves',
+          }}
+          initialTags={[]}
+          onChangeTags={(tags) => console.log(tags)}
+          onTagPress={(index, tagLabel, event, deleted) =>
+            console.log(
+              index,
+              tagLabel,
+              event,
+              deleted ? 'deleted' : 'not deleted',
+            )
+          }
+          containerStyle={{justifyContent: 'center'}}
+          inputStyle={{
+            backgroundColor: 'white',
+            color: '#2b2b2b',
+            borderBottomWidth: 1,
+            borderBottomColor: '#d9d9d9',
+            fontFamily: 'Poppins-Regular',
+            fontSize: 14,
+          }}
+          renderTag={({tag, index, onPress, deleteTagOnPress, readonly}) => (
+            <ButtonTags key={`${tag}-${index}`} onPress={onPress}>
+              <TextTags>{tag}</TextTags>
+            </ButtonTags>
+          )}
+        />
       </BoxCampo>
       <BoxCampo>
         <Label>Valor do serviço:</Label>

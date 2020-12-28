@@ -8,6 +8,8 @@ export const Container = styled.View`
   background: #f4f4f4;
   margin: 20px 0 0;
   border-radius: 10px;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const BoxCategoria = styled.View`
@@ -64,6 +66,51 @@ export const ButtonWhatsapp = styled.TouchableOpacity`
 export const WhatsImage = styled.Image`
   width: 30px;
   height: 30px;
+`;
+
+export const Title = styled.Text`
+  font-family: 'Poppins-SemiBold';
+  font-size: 16px;
+  color: #2b2b2b;
+  margin-top: 55px;
+`;
+
+export const BoxDados = styled.View`
+  flex-direction: row;
+  width: 80%;
+  align-items: baseline;
+`;
+
+export const Label = styled.Text`
+  font-family: 'Poppins-Medium';
+  font-size: 14px;
+  color: #2b2b2b;
+  margin-right: 5px;
+`;
+
+export const LabelDesc = styled.Text`
+  font-family: 'Poppins-Light';
+  font-size: 14px;
+  color: #2b2b2b;
+`;
+
+export const BoxPalavrasChaves = styled.View`
+  width: 65%;
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+`;
+
+export const TitlePalavrasChaves = styled.Text`
+  font-family: 'Poppins-SemiBold';
+  font-size: 12px;
+  color: #2b2b2b;
+`;
+
+export const DescPalavrasChaves = styled.Text`
+  font-family: 'Poppins-Light';
+  font-size: 10px;
+  color: #2b2b2b;
 `;
 
 export const styles = StyleSheet.create({

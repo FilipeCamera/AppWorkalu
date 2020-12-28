@@ -93,3 +93,20 @@ export const ButtonBack = styled.TouchableOpacity`
   top: 40px;
   left: 15px;
 `;
+
+export const ButtonTags = styled.TouchableOpacity`
+  flex-direction: row;
+  padding: 5px;
+  height: 40px;
+  background: #e54545;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+  border-radius: 5px;
+`;
+
+export const TextTags = styled.Text`
+  font-family: 'Poppins-Light';
+  font-size: 12px;
+  color: #fff;
+`;
